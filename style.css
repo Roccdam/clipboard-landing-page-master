@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif; 
+}
+
+.wrapper{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.wrapper-header-background{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h1{
+    padding-bottom:15px ;                  
+    color: hsl(210, 10%, 33%);
+}
+
+.wrapper-header-logo{
+    margin-top: 60px;
+    padding:50px 0;
+}
+
+p{
+    line-height: 1.5; 
+    color: hsl(201, 11%, 66%);
+    padding-bottom: 25px;
+ }
+
+ button{
+    display: grid;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px ;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    letter-spacing: 1.5px;
+    font-weight: 700;    
+}
+ /*Remember to change 
+    all header font family*/
+.download-button-for-ios{
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: inset;
+    box-shadow: 1px 5px 200px 1px hsl(171, 66%, 44%);
+}
+
+.download-button-for-mac{
+    background-color: hsl(233, 100%, 69%);
+}
+
+h2{
+    margin-top: 120px ;
+    padding: 15px 0;
+    color: hsl(210, 10%, 33%);
+}
+
+.first-computer-image,
+.computer-and-phone-image{
+    width: 100%;
+    padding: 30px 0;
+}
+
+h3{
+    padding: 25px 0 10px 0;
+    color: hsl(210, 10%, 33%);
+}
+
+.productivity-tools-section h2{
+    margin-top: 60px;
+}
+
+.productivity-tools-section  p{
+    padding-bottom: 60px;
+}
+
+.brand-logo-images{
+    margin-top: 30px;
+    padding: 20px 0;
+}
+
+.footer{
+    margin-top: 150px;
+    background-color:hsl(201, 11%, 95%) ;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.logo-inside-the-footer{
+    width: 15%;
+    padding-bottom: 20px;
+}
+
+li{
+    padding: 15px 0;
+    color: hsl(210, 10%, 33%);
+    list-style: none;
+}
+
+/* ul{
+    text-decoration: none;
+} */
+
+.icons-inside-the-footer{
+    margin-top: 30px;
+}
+
+.icon-in-the-footer{
+    padding: 12px;
+}
+
+
+
+@media only screen and (min-width:1024px) {
+    /*.wrapper-header-background{
+         background: url(images/bg-header-desktop.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+    } */
+
+    .wrapper-first-paragraph{
+        padding: 0 170px;
+    }
+
+    .wrapper-download-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        gap: 1rem;
+    }
+
+    .download-button-for-ios{
+        width: 25%;
+        gap: 3rem;
+    }
+    
+    .download-button-for-mac{
+        width: 25%;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .wrapper-first-computer-area P{
+        padding: 0 120px;
+    }
+      
+    .first-computer-and-functions{
+        display: flex;
+        padding: 80px 0;
+    }
+
+    .first-computer-image{
+        width: 150%;
+        position: relative;
+        right: 200px;
+    }
+
+    .computer-and-functions{
+        margin-top: 50px;
+        position: relative;
+        padding-bottom: 0;
+    }
+
+    .computer-and-functions-div{
+        text-align: left;
+        width: 110%;
+        padding: 10px 0;
+    }
+
+    .computer-and-functions-div h3{
+        margin-left: 120px;
+    }
+
+    .computer-and-phone-image-area h2{
+        font-size: 35px;
+    }
+
+    .computer-and-phone-image-area p{
+        padding: 0 140px;
+    }
+
+    .computer-and-phone-image{
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .productivity-tools-section h2{
+        font-size: 35px;
+    }
+
+    .icons-with-header-and-paragraph{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icons-with-header-and-paragraph p{
+        font-size: small;
+        width: 95%;
+    }
+
+    .brand-logos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .clipboard-for-os h2{
+        font-size: 35px;
+    }
+
+    .clipboard-for-os p{
+        padding: 0 120px;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo-inside-the-footer{
+        width: 50%;  
+        margin-top: 15px; 
+    }
+
+    .footer-list-items{
+        display: flex;
+        gap: 3rem;
+        text-align: left;
+    } 
+}
+
+
+@media only screen and (min-width:1440px) {
+    .wrapper{
+        width: 65%;
+    }
+
+    .wrapper-header-background{
+        width: 150%;
+        /* background: url(images/bg-header-desktop.png); */
+       position: absolute;
+       top: 0;
+       right: 0;
+   } 
+
+    .first-computer-image{
+        width: 200%;
+        position: relative;
+        right: 400px;
+    }
+
+    .computer-and-functions-div{
+        text-align: left;
+        width: 125%;
+        padding: 10px 0;
+    }
+
+    .icons-with-header-and-paragraph{
+        width: 115%;
+        gap: 4rem;
+        position: relative;
+        right: 80px;
+    }
+
+    .icons-with-header-and-paragraph p{
+        width: 115%;
+        font-size:medium;
+    }
+
+    .brand-logos{
+        gap: 5rem;
+    }
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/*.wrapper{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.background-header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h1{
+    padding-bottom:15px ;
+    color: hsl(210, 10%, 33%);
+}
+
+.header-logo{
+    margin-top: 60px;
+    padding:50px 0;
+}
+
+p{
+   line-height: 1.5; 
+   color: hsl(201, 11%, 66%);
+   padding-bottom: 25px;
+}
+
+button{
+    display: grid;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px ;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    letter-spacing: 1.5px;
+    font-weight: 700;    
+}
+
+.download-for-ios-button{
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: inset;
+    box-shadow: 1px 5px 200px 1px hsl(171, 66%, 44%);
+}
+
+.download-for-mac-button{
+    background-color: hsl(233, 100%, 69%);
+}
+
+h2{
+    margin-top: 120px ;
+    padding: 15px 0;
+    color: hsl(210, 10%, 33%);
+}
+
+.first-computer-image{
+    width: 100%;
+    padding: 30px 0;
+}
+h3{
+    padding: 25px 0 10px 0;
+
+    color: hsl(210, 10%, 33%);
+}
+.h2-3{
+    margin-top: 60px;
+}
+.p4{
+    padding-bottom: 60px;
+}
+.items-inside-icons-with-header-and-paragraph{
+    padding: 20px 0;
+}
+.items-inside-icons-with-header-and-paragraph p{
+    padding: 50px;
+}
+.brand-logo-images{
+    padding: 25px 0;
+}
+footer{
+    margin-top: 150px;
+    background-color:hsl(201, 11%, 95%) ;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+footer div{
+    padding: 10px 0;
+}
+.foot-img{
+    padding: 15px;
+}
+.foot-logo{
+    width: 15%;
+}
+@media only screen and (min-width:1024px) {
+    .wrapper{
+         width: 80%;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .p1{
+        width: 75%;
+        margin: 0 90px;
+        
+    }
+    .wrapper-first-computer-area-first-paragraph{
+        width: 85%;
+        margin: 0 60px;
+        padding-bottom: 90px;
+    }
+    .wrapper-download-buttons{
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 25%;
+        padding: 0 1px;
+    }
+    button{
+        padding: 18px 0px;
+    }
+    .download-for-ios-button{
+        margin: 0 10px;
+    }
+
+    .download-for-mac-button{
+        margin: 0 10px;
+    }
+
+    .flex{
+        display: flex;
+        justify-content: center;
+    }
+
+    #flex1{
+        width: 100%;
+    }
+
+    .first-computer-image{
+        width: 150%;
+        position: relative;
+        right: 380px;
+        bottom: 20px;    
+    }
+
+    .computer-and-functions-quick-search{
+        text-align: left;
+    }
+
+    .computer-and-phone-image{
+        width: 100%;
+    }
+
+    .p3{
+        width: 80%;
+        margin: 0 60px;
+    }
+
+    .h4-p{
+        padding: 0 30px;
+        width: 135%;
+    }
+    .comp{
+        padding: 25px 0px;
+    }
+
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
